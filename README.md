@@ -65,7 +65,7 @@ Make sure you have the following installed on your machine:
     }
     ```
 
-1. Add a request for updating a user:
+1. Add a request for deleting a user:
     + Endpoint : ``http://your-server-url/folder-name``
     + HTTP Method : ``POST``
     + Request Body :
