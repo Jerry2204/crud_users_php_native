@@ -75,3 +75,5 @@ Make sure you have the following installed on your machine:
         "id": 1
     }
     ```
+
+Note: Replace http://your-server-url with the actual URL of your server where the PHP application is hosted.
