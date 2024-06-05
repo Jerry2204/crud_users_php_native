@@ -28,6 +28,7 @@
                         $name = $data["name"];
                         $address = $data["address"];
                         $email = $data["email"];
+                        $id = $data["id"];
                         update($name, $email, $address, $id);
                     } else {
                         echo json_encode(array("status" => "error", "message" => "Invalid request data"));
@@ -89,7 +90,7 @@
     function update($name, $email, $address, $id) {
         global $conn;
 
-        $update = mysqli_query($conn, "UPDATE users SET name='$name', email='$email', address=$address WHERE id=$id");
+        $update = mysqli_query($conn, "UPDATE users SET name='$name', email='$email', address='$address' WHERE id=$id");
 
         if($update) {
             echo json_encode(array("status" => "updated", "message" => "User updated successfully!"));
